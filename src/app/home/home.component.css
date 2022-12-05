@@ -1,0 +1,11 @@
+body {
+    background: url('/assets/home.jpg') no-repeat fixed center center;
+    /* background-color: #ff7b81; */
+    background-size: cover;
+    font-family: Montserrat;
+  }
+/* h1 {
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+   */

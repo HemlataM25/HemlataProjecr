@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+body{
+    background-color: gray;
+    color:purple;
+}
+.green-icon{
+    color:lightgreen;
+}
+.blue-icon{
+    color:darkblue;
+}
+.red-icon{
+    color:red;
+}
+input.ng-touchd.ng-invalid{
+   border-color: darkred;
+}
+input.ng.valid{
+    border-color: darkgreen;
+ }

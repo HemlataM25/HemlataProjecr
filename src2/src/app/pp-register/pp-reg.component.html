@@ -1,0 +1,67 @@
+<body>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+<form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+    <input type="hidden" name="Pid" [value]="objservice.ppData.PId">
+    <div class="login-block">
+    <div class="form-group">
+    <div class="input-group">
+    <div class="input-group-prepend">
+     <div class="input-group-text bg-white">
+
+
+     <i class="fa fa-user-circle-o" aria-hidden="true" [class.green-icon]="PName.valid"
+      [class.red-icon]="PName.invalid && PName.touched"></i>
+     <input name="PName" #PName="ngModel"   [(ngModel)]="objservice.ppData.PName" placeholder="Plan Name" class="form-control" required>
+      </div></div>  </div>   </div>
+
+                <div class="form-group">
+                <div class="input-group">
+                <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                <i class="fa fa-diamond" aria-hidden="true" [class.green-icon]="Amount.valid"
+                [class.red-icon]="Amount.invalid && Amount.touched"></i>
+                <input  type="number" name="Amount" #Amount="ngModel"   [(ngModel)]="objservice.ppData.Amount" placeholder="Amount" type="number"
+                class="form-control" required >
+                </div></div>  </div>   </div>
+
+                <div class="form-group">
+                    <div class="input-group">
+                    <div class="input-group-prepend">
+                    <div class="input-group-text bg-white">
+                    <i class="fa fa-calendar" aria-hidden="true" [class.green-icon]="Start.valid"
+                    [class.red-icon]="Start.invalid && Start.touched"></i>
+                    <input type="date" name="Start" #Start="ngModel"   [(ngModel)]="objservice.ppData.Start" placeholder="yyyy-mm-dd"
+                    class="form-control" required >
+                </div></div>  </div>   </div>
+
+                <div class="form-group">
+                    <div class="input-group">
+                    <div class="input-group-prepend">
+                    <div class="input-group-text bg-white">
+                    <i class="fa fa-calendar" aria-hidden="true" [class.green-icon]="End.valid"
+                    [class.red-icon]="End.invalid && End.touched"></i>
+                    <input type="date" name="End" #End="ngModel"   [(ngModel)]="objservice.ppData.End" placeholder="yyyy-mm-dd"
+                    class="form-control" required >
+                 </div></div>  </div>   </div>
+
+               <div class="form-group">
+                    <div class="input-group">
+                    <div class="input-group-prepend">
+                     <div class="input-group-text bg-white">
+                     <i class="fa fa-user-circle-o" aria-hidden="true" [class.green-icon]="MrefID.valid"
+                      [class.red-icon]="MrefID.invalid && MrefID.touched"></i>
+                     <input type="number" name="MrefID" #MrefID="ngModel"   [(ngModel)]="objservice.ppData.MrefID" placeholder="MrefID"
+                     class="form-control" required >
+                </div></div>  </div>   </div>
+
+
+
+                <div class="form-group">
+                    <button class="btn btn-success btn-lg" type="submit"
+                        [disabled]="form.invalid" (click)="navigate()">
+                       <i class="fa fa-database"></i>Create/Update</button>
+                </div>
+              </div>
+</form>
+</body>

@@ -1,0 +1,39 @@
+
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<body class="body">
+<div >
+<table class="table table-hover">
+        <thead class="login-block">
+            <tr>
+                <th>Mid</th>
+                <th>Name</th>
+                <th>UserName</th>
+                <th>Password</th>
+                <th>Address</th>
+                <th>State</th>
+                <th>Country</th>
+                <th>Email</th>
+                <th>Contact</th>
+                <th>DOJ</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let p of objservice.mlist">
+                <td (click)="fillForm(p)">{{p.Mid}}</td>
+                <td (click)="fillForm(p)">{{p.MName}}</td>
+                <td (click)="fillForm(p)">{{p.Username}}</td>
+                <td (click)="fillForm(p)">{{p.Password}}</td>
+                <td (click)="fillForm(p)">{{p.Address}}</td>
+                <td (click)="fillForm(p)">{{p.State}}</td>
+                <td (click)="fillForm(p)">{{p.Country}}</td>
+                <td (click)="fillForm(p)">{{p.Email}}</td>
+                <td (click)="fillForm(p)">{{p.Contact}}</td>
+                <td (click)="fillForm(p)">{{p.DOJ}}</td>
+                
+            </tr>
+        </tbody>
+
+</table>
+</div>
+</body>
