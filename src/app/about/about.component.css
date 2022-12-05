@@ -1,0 +1,6 @@
+body {
+    background: url('/assets/about.jpg') ;
+    /* background-color: #ff7b81; */
+    background-size: cover;
+    font-family: Montserrat;
+  }
