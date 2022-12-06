@@ -1,6 +1,6 @@
 body {
-    /* background: url('/assets/Bgcolor.jfif') no-repeat fixed center center; */
-    background-color: lightgreen;
+    background: url('/assets/Bgcolor.jfif') no-repeat fixed center center;
+    /* background-color: lightgreen; */
     
     font-family: Montserrat;
 }

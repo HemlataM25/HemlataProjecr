@@ -39,7 +39,7 @@ h2 {
   height: 42px;
   box-sizing: border-box;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(204, 204, 204);
   margin-bottom: 20px;
   font-size: 14px;
   font-family: Montserrat;
