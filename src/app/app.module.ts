@@ -14,6 +14,9 @@ import { PpRegComponent } from './pp-register/pp-reg.component';
 import { PpShowComponent } from './pp-show/pp-show.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { AdminloginComponent } from './adminlogin/adminlogin.component';
+import { LogoutComponent } from './logout/logout.component';
+import { NewnavComponent } from './newnav/newnav.component';
 // import { PpRegComponent } from './pp-register/pp-reg.component';
 
 @NgModule({
@@ -27,7 +30,10 @@ import { AboutComponent } from './about/about.component';
     PpRegComponent,
     PpShowComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    AdminloginComponent,
+    LogoutComponent,
+    NewnavComponent
   ],
   imports: [
     BrowserModule,

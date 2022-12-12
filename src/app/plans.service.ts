@@ -6,11 +6,13 @@ import { Plans } from './plans.model';
   providedIn: 'root'
 })
 export class PlansService {
+  
   ppData:Plans=new Plans();
-  readonly ppApiUrl='http://localhost:22009/api/plans';
+  readonly ppApiUrl='https://claimproject.azurewebsites.net/api/plans';
   ppList:Plans[];
 
   constructor(private objcHttp:HttpClient) {  }
+  
 
   putPlan()
   {

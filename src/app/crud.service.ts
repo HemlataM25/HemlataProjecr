@@ -5,7 +5,7 @@ import { HttpClient} from '@angular/common/http';
   providedIn: 'root'
 })
 export class CrudService {
-  readonly ApiUrl='http://localhost:22009/api/members';
+  readonly ApiUrl='https://claimproject.azurewebsites.net/api/members';
   mlist:Member[];
   mdata:Member=new Member();
   constructor(private obj:HttpClient) { }

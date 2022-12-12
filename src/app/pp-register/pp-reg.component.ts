@@ -9,13 +9,25 @@ import { Router } from '@angular/router';
   styleUrls: ['./pp-reg.component.css']
 })
 export class PpRegComponent implements OnInit {
+p1: any;
+  
+
   constructor(
     public objservice:PlansService,
     private router: Router,) { }
-
+public listItems : Array<string> = [];
   ngOnInit(): void {
     this.resetForm();
+    
   }
+ /*  dropdownRefresh(){
+    this.objservice.getPpDropDownValues().subscribe(data=>{
+      console.log(data);
+      data.forEach(element=>{
+        this.listItems.push(element["Plans"]);
+      });
+    })
+  } */
   resetForm(form?:NgForm)
   {
     if(form!=null)

@@ -1,6 +1,51 @@
-body {
-    background: url('/assets/about.jpg') ;
-    /* background-color: #ff7b81; */
-    background-size: cover;
-    font-family: Montserrat;
+/* body {
+  background: url('/assets/signup.jpg') no-repeat fixed center center;
+  background-color: #ff7b81;
+  background-size: cover;
+  font-family: Montserrat;
+}
+
+*{
+  margin: 4px;
+  padding: 4px;
+}
+.background-image{
+  background-image: url('/assets/claimImg.jpg');
+  background-size:cover;
+  background-color: goldenrod;
+  height:100vh;
+  margin-bottom:60px;
+} */
+
+ .left{
+    position:absolute;
+    top: 80%;
+    left: 7%;
+   
+    transform:none;
+    color: rgb(17, 27, 24);
+    font-family:'Times New Roman', Times, serif;
   }
+  .right{
+    position:absolute;
+    top: 140%;
+    left: 7%;
+    
+    transform:none;
+    color: rgb(17, 27, 24);
+    font-family:'Times New Roman', Times, serif;
+  } 
+  .center {
+    position:absolute;
+    top: 53%;
+    
+    /* transform:none; */
+    height:200px;
+    width:325px;
+    left:67;
+   
+  }
+  /* .h3{
+    color: rgb(237, 100, 111);
+  }
+ */

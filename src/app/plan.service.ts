@@ -6,7 +6,7 @@ import { Plan } from './plan.model';
   providedIn: 'root'
 })
 export class PlanService {
-  readonly ppApiUrl='http://localhost:22009/api/plans';
+  readonly ppApiUrl='https://claimproject.azurewebsites.net/api/plans';
   ppData:Plan=new Plan();
   ppList:Plan[]
   // pList:Plans[];

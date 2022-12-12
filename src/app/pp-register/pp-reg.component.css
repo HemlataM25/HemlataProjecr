@@ -1,9 +1,15 @@
 body {
-  background: url('/assets/insurance.jpg') no-repeat fixed center center;
+  background: url('/assets/newdisplay.jpg') no-repeat fixed center center;
   /* background-color: #ff7b81; */
   background-size: cover;
   font-family: Montserrat;
 }
+.background-image{
+  background-size: cover;
+  height:100vh;
+  margin-bottom: 60px ;
+}
+
 h2 {
   color: black;
   font-family: Georgia, 'Times New Roman', Times, serif;

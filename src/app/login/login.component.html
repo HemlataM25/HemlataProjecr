@@ -39,23 +39,59 @@
     </form>
 </div>
 </body> -->
-<body class="body">
-  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-<img src="/assets/claimImg.jpg">
-<div class="login-block">
-<form [formGroup]="form" (submit)="submit()">
-<h1 class="h3 mb-3 fw-normal">Please Login</h1>
+<body>
+  
+<div class="container-fluid" style="margin-top: 10%;">
+  <div class="row">
+    <div class="offset-lg-3 col-lg-6">
+   
+<div class="card" style="background-color: #ccc;">
+    <form [formGroup]="form" (ngSubmit)="ProceedLogin()">
 
-<input type="text" formControlName="username" class="form-control" placeholder="Username" required>
-
-<input type="password" formControlName="password" class="form-control" placeholder="Password" required>
-
-<button class="w-100 btn btn-lg btn-primary" type="submit" (click)="navigate()">Sign IN</button>
-
+   
+    <div class="row" style="display: block;">
+      <h2 style="text-align: center;" >Login</h2>
+    </div>
+    
+  <div class="row">
+    <div class="offset-lg-3 col-lg-6">
+        <div class="form-group">
+            <label for="txtname">UserName</label>
+            <input type="text" id="txtname" class="form-control" formControlName="username" placeholder="User Name"   autocomplete="off"  />
+        </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="offset-lg-3 col-lg-6">
+        <div class="form-group">
+            <label for="txtpassword">Password</label>
+            <input type="text" id="txtpassword" class="form-control" formControlName="password"  placeholder="Password"  autocomplete="off"  />
+        </div>
+    </div>
+  </div>
+  
+  
+  <div class="row">
+    <div class="offset-lg-3 col-lg-2">
+      <br>
+        <div class="form-group" style="text-align: center;">
+           <button type="submit" class="btn btn-primary btn-lg btn-block" >Login</button>
+        </div>
+    </div>
+    <div class="col-lg-3">
+        <br>
+        <span></span>
+    </div>
+  </div>
 </form>
+  
+  </div>
+</div>
+</div>
 </div>
 </body>
-
+ 
+ 
 
 
 
